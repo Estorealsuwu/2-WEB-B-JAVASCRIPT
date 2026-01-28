@@ -39,3 +39,6 @@ let id=Symbol("id");
 console.log("Symbol: ")
 console.log(id);
 console.log(typeof id);
+
+/* linea de codigos
+en diferentes lineas */
