@@ -1,6 +1,6 @@
 /* tipos de datos */
 
-let edad=25; // number
+let edad=23; // number
 let nombre="Hector"; // string
 let esEstudiante=true; // boolean
 
@@ -27,7 +27,7 @@ console.log(typeof telefono); // object (esto es un error en JavaScript)
 //object
 let persona={
     nombre:"Hector",
-    edad:25,
+    edad:23,
     ciudad:"monclova"
 };
 console.log("Object: ")
