@@ -2,14 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Introduccion a JS</title>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+
+    <header>
+        <h1 id="titulo">Hola Mundo</h1>
+        <ul>
+            <li>Home</li>
+            <li>Referencias</li>
+            <li>Blog</li>
+            <li>Contacto</li>
+        </ul>
+    </header>
+
+    <main>
+        <section>
+            <p id="texto">Hola soy un parrafo</p>
+        </section>
+
+        <div class="caja"></div>
+    </main>
+
+    <button id="btnTexto">Cambiar texto</button>
+    <button id="btnColor">Cambiar color</button>
+    <button id="btnOcultar">Ocultar/Mostrar</button>
+<button id="btn">cambiar clase</button>
+
+    //crear caja de comentarios interactiva
+    <h2>Agregar comentario</h2>
+
+     <form id="formulario">
+    <input type="text" id="inputComentario" placeholder="Escribe algo..." required>
+    <button type="submit">Enviar</button>
+     </form>
+
+     <div id="contenedorComentarios"></div>    
 
 
-<script src="/main.js"></script>
-    
+
+
+    <!--Enlazando mi archivo HTML con mi archivo JS-->
+    <script src="MainDom.js"></script>
+
 </body>
 </html>
