@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Matriz de Organización</title>
+</head>
+<body>
+
+  <h1>Organizador tareas</h1>
+
+  <!-- Formulario -->
+  <input type="text" id="taskInput" placeholder="Escribe una actividad">
+  
+  <select id="selector">
+    <option value="urgente">🔴 Actividades urgentes</option>
+    <option value="importante">🟡 Actividades importantes</option>
+    <option value="despues">🟢 Para después</option>
+    <option value="siguientesemana">🔵 Para la siguiente semana</option>
+  </select>
+
+  <button onclick="addTask()">Agregar</button>
+
+  <hr>
+  <table>
+    <tr>
+      <td>
+        <h3>🔴 Actividades urgentes</h3>
+        <ul id="urgente"></ul>
+      </td>
+      <td >
+        <h3>🟡 Actividades importantes</h3>
+        <ul id="importante"></ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h3>🟢 Para después</h3>
+        <ul id="despues"></ul>
+      </td>
+      <td>
+        <h3>🔵 Para la siguiente semana</h3>
+        <ul id="siguientesemana"></ul>
+      </td>
+    </tr>
+  </table>
+
+  <script src="./tolist.js"></script>
+
+
+</body>
+</html>
