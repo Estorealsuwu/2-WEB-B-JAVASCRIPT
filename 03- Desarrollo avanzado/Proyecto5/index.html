@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Eventos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Registro de Eventos</h1>
+
+        <form id="registroForm">
+
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo">
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <h3>Intereses</h3>
+
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" name="intereses" value="Tecnología">
+                    Tecnología
+                </label>
+
+                <label>
+                    <input type="checkbox" name="intereses" value="Diseño">
+                    Diseño
+                </label>
+
+                <label>
+                    <input type="checkbox" name="intereses" value="Marketing">
+                    Marketing
+                </label>
+            </div>
+
+            <h3>Horario Preferido</h3>
+
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="horario" value="Mañana">
+                    Mañana
+                </label>
+
+                <label>
+                    <input type="radio" name="horario" value="Tarde">
+                    Tarde
+                </label>
+
+                <label>
+                    <input type="radio" name="horario" value="Noche">
+                    Noche
+                </label>
+            </div>
+
+            <label for="fecha">Fecha del evento</label>
+            <input type="date" id="fecha" name="fecha">
+
+            <label for="archivo">Subir identificación (opcional)</label>
+            <input type="file" id="archivo" name="archivo">
+
+            <button type="submit">Registrarse</button>
+
+            <p id="mensaje"></p>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

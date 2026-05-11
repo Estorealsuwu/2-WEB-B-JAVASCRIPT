@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    min-height:100vh;
+    background: linear-gradient(
+        180deg,
+        #ffd6e7,
+        #ffeaf4
+    );
+
+    overflow-x:hidden;
+    padding:40px 20px;
+}
+
+/* decoraciones */
+
+.decoracion{
+    position:fixed;
+    border-radius:50%;
+    z-index:-1;
+    opacity:0.4;
+}
+
+.decoracion1{
+    width:250px;
+    height:250px;
+    background:#ffb6d5;
+    top:-60px;
+    left:-60px;
+}
+
+.decoracion2{
+    width:300px;
+    height:300px;
+    background:#ffcce2;
+    bottom:-80px;
+    right:-80px;
+}
+
+/* contenedor */
+
+.container{
+    max-width:700px;
+    margin:auto;
+    background:rgba(255,255,255,0.75);
+    backdrop-filter: blur(10px);
+
+    padding:35px;
+    border-radius:30px;
+
+    box-shadow:
+        0 10px 30px rgba(255, 105, 180, 0.15);
+}
+
+/* títulos */
+
+h1{
+    text-align:center;
+    color:#ff4f93;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#b85d87;
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+/* botón */
+
+button{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:18px;
+
+    background: linear-gradient(
+        90deg,
+        #ff8fc7,
+        #ff6fb5
+    );
+
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+    margin-bottom:25px;
+}
+
+button:hover{
+    transform:translateY(-2px) scale(1.01);
+
+    box-shadow:
+        0 8px 20px rgba(255,111,181,0.35);
+}
+
+/* pedidos */
+
+.pedidos{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.pedido{
+    background:white;
+    padding:20px;
+
+    border-radius:20px;
+
+    box-shadow:
+        0 4px 15px rgba(255,182,213,0.25);
+
+    border:2px solid #ffe1ee;
+
+    animation: aparecer 0.4s ease;
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.pedido h3{
+    color:#ff5fa2;
+    margin-bottom:10px;
+}
+
+.estado{
+    font-weight:bold;
+}
+
+.en-proceso{
+    color:#ff9800;
+}
+
+.completado{
+    color:#4caf50;
+}
